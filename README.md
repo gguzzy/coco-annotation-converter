@@ -49,3 +49,12 @@ Run the `converter.py` script via the command line, specifying the paths to the 
 
 ```bash
 python converter.py --pred PATH_TO_PRED_COCO_JSON --output OUTPUT_PATH [--score_thresh THRESHOLD]
+```
+
+Or as external pip package as:
+
+```bash
+import converter
+converter.setup_logging()
+converter.convert_pred_coco('path/to/pred_coco.json', 'path/to/output.json')
+```
